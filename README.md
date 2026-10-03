@@ -1,26 +1,31 @@
 # 🛒 Product Management REST API
 
-API REST desenvolvida em Node.js e Express integrada com banco de dados relacional PostgreSQL para gerenciamento completo (CRUD) de produtos.
+A production-ready REST API built with Node.js and Express, integrated with a PostgreSQL relational database for complete product data lifecycle management (CRUD).
 
-## 🚀 Tecnologias Utilizadas
+---
 
-- **Node.js**: Ambiente de execução JavaScript no servidor
-- **Express**: Framework web minimalista para construção das rotas da API
-- **PostgreSQL**: Banco de dados relacional para persistência dos dados
-- **node-postgres (pg)**: Driver oficial do PostgreSQL com Connection Pool
-- **Postman**: Validação, requisições HTTP e testes de endpoints
-- **DBeaver**: Administração e inspeção visual do banco de dados
+## 🚀 Tech Stack
 
-## 📌 Rotas da API (Endpoints)
+- **Node.js**: Server-side JavaScript runtime environment
+- **Express**: Minimalist web framework for API routing and middleware
+- **PostgreSQL**: Enterprise-grade relational database for data persistence
+- **node-postgres (`pg`)**: Official PostgreSQL client featuring connection pooling
+- **Postman**: API testing, HTTP request execution, and endpoint verification
+- **DBeaver**: Database GUI administration, querying, and schema inspection
 
-| Método | Rota | Descrição | Status de Sucesso |
-|---|---|---|---|
-| `GET` | `/products` | Lista todos os produtos cadastrados | `200 OK` |
-| `POST` | `/products` | Insere um novo produto | `201 Created` |
-| `PUT` | `/products/:id` | Atualiza o preço de um produto existente | `200 OK` |
-| `DELETE` | `/products/:id` | Remove um produto do banco pelo ID | `200 OK` |
+---
 
-### Exemplo de Payload (POST):
+## 📌 API Endpoints
+
+| Method | Endpoint | Description | Success Status |
+| :--- | :--- | :--- | :--- |
+| **GET** | `/products` | Retrieves all registered products | `200 OK` |
+| **POST** | `/products` | Inserts a new product into the database | `201 Created` |
+| **PUT** | `/products/:id` | Updates an existing product by its ID | `200 OK` |
+| **DELETE** | `/products/:id` | Deletes a product from the database by its ID | `200 OK` |
+
+### Sample Payload (`POST /products`):
+
 ```json
 {
   "name": "Headset Gamer 7.1",
